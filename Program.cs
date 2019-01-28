@@ -11,6 +11,10 @@ namespace InterviewPrep
     {
         static void Main(string[] args)
         {
+            //Bubble Sorting Algorithms
+            clsSortAlgorithm.BubbleSort();
+            //SelectionSorting Algorithms
+            clsSortAlgorithm.SelectionSort();
             //Fibonacci Series
             clsCustomMethods.FibonacciSeries();
 

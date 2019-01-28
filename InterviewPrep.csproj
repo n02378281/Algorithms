@@ -45,6 +45,7 @@
     <Compile Include="clsBinaryOperators.cs" />
     <Compile Include="clsBinarySearchTree.cs" />
     <Compile Include="clsBinarytoDoubleLinkedList.cs" />
+    <Compile Include="clsCustomer.cs" />
     <Compile Include="clsCustomMethods.cs" />
     <Compile Include="clsDoubleLinkedList.cs" />
     <Compile Include="clsFibonacci.cs" />
@@ -56,6 +57,7 @@
     <Compile Include="clsReplaceDupsWithZeros.cs" />
     <Compile Include="clsReverseString.cs" />
     <Compile Include="clsSelectSortAlgorithm.cs" />
+    <Compile Include="clsSortAlgorithm.cs" />
     <Compile Include="clsSplit.cs" />
     <Compile Include="clsStringtoInt.cs" />
     <Compile Include="clsSwitchPairofStrings.cs" />
