@@ -13,8 +13,13 @@ namespace InterviewPrep
         {
             //Bubble Sorting Algorithms
             clsSortAlgorithm.BubbleSort();
-            //SelectionSorting Algorithms
+
+            //Selection Sorting Algorithms
             clsSortAlgorithm.SelectionSort();
+
+            //Insertion Sorting Algorithms
+            clsSortAlgorithm.InsertionSort();
+
             //Fibonacci Series
             clsCustomMethods.FibonacciSeries();
 
