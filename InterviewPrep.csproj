@@ -42,6 +42,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="clsMergeArray.cs" />
+    <Compile Include="clsSingleTon.cs" />
+    <Compile Include="clsSumOfNumberToGivenSum.cs" />
     <Compile Include="clsBinaryOperators.cs" />
     <Compile Include="clsBinarySearchTree.cs" />
     <Compile Include="clsBinarytoDoubleLinkedList.cs" />
@@ -55,6 +58,7 @@
     <Compile Include="clsPrintStarsinRectangle.cs" />
     <Compile Include="clsRemoveDuplicatesInAString.cs" />
     <Compile Include="clsReplaceDupsWithZeros.cs" />
+    <Compile Include="clsReverseLinkedList.cs" />
     <Compile Include="clsReverseString.cs" />
     <Compile Include="clsSelectSortAlgorithm.cs" />
     <Compile Include="clsSortAlgorithm.cs" />
