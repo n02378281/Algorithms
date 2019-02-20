@@ -43,7 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="clsMergeArray.cs" />
-    <Compile Include="clsSingleTon.cs" />
+    <Compile Include="DesignPatterns\clsSingleTon.cs" />
     <Compile Include="clsSumOfNumberToGivenSum.cs" />
     <Compile Include="clsBinaryOperators.cs" />
     <Compile Include="clsBinarySearchTree.cs" />
@@ -67,6 +67,11 @@
     <Compile Include="clsSwitchPairofStrings.cs" />
     <Compile Include="clsTrappingRain.cs" />
     <Compile Include="clsWordCount.cs" />
+    <Compile Include="DesignPatterns\SOLID Principles\DependencyInversion.cs" />
+    <Compile Include="DesignPatterns\SOLID Principles\InterfaceSegregation.cs" />
+    <Compile Include="DesignPatterns\SOLID Principles\LiskovSubstitution.cs" />
+    <Compile Include="DesignPatterns\SOLID Principles\OpenClosedPrinciple.cs" />
+    <Compile Include="DesignPatterns\SOLID Principles\SingleResponsibility.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

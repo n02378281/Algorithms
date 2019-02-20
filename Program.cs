@@ -1,4 +1,5 @@
-﻿using System;
+﻿using InterviewPrep.DesignPatterns.SOLID_Principles;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,6 +12,8 @@ namespace InterviewPrep
     {
         static void Main(string[] args)
         {
+            //S.O.L.I.D
+            SingleResponsibility.Method();
             //Convert a Binary Tree to Double Linked list
             DLL d = new DLL();
             Tree t = new Tree();
@@ -26,7 +29,7 @@ namespace InterviewPrep
             clsSortAlgorithm.quickSort(arr, 0, n - 1);
             Console.WriteLine("sorted array ");
             clsSortAlgorithm.printArray(arr, n);
-            
+
             //Selection Sorting Algorithms
             clsSortAlgorithm.SelectionSort();
 
@@ -119,7 +122,7 @@ namespace InterviewPrep
             //Convert String to Int
             clsStringtoInt.ConvertToNumber();
             clsStringtoInt.StringtoInt("125");
-            
+
             //Reverse a String in a Sentence
             clsReverseString.ReverseWords();
 
