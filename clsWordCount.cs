@@ -13,7 +13,7 @@ namespace InterviewPrep
             Console.WriteLine("Enter string:");
             string str = Console.ReadLine();
             int num = 0;
-            bool wasInaWord = true; ;
+            bool wasInaWord = true; 
 
             if (string.IsNullOrEmpty(str))
             {
