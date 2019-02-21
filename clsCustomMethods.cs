@@ -48,7 +48,7 @@ namespace InterviewPrep
             string strRev = "Bharath Vanathadupula";
             int strLength = strRev.Length - 1;
             string temp = "", rev = "";
-
+             
             for (int i = 0; i <= strLength; i++)
             {
                 temp += strRev[i];
