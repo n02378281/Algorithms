@@ -12,35 +12,12 @@ namespace InterviewPrep
     {
         static void Main(string[] args)
         {
-            //S.O.L.I.D
-            SingleResponsibility.Method();
-            //Convert a Binary Tree to Double Linked list
-            DLL d = new DLL();
-            Tree t = new Tree();
-            d.FromTree(t);
-            d.Display();
-
-            //Select Sort Algorithm
-            clsSelectSortAlgorithm.AlgSort();
-
             //Quick Sort Algorithm
             int[] arr = { 10, 7, 8, 9, 1, 5 };
             int n = arr.Length;
             clsSortAlgorithm.quickSort(arr, 0, n - 1);
             Console.WriteLine("sorted array ");
             clsSortAlgorithm.printArray(arr, n);
-
-            //Selection Sorting Algorithms
-            clsSortAlgorithm.SelectionSort();
-
-            //Merge two Arrays
-            clsMergeArray.outputMergeArray();
-
-            //Find two elements in an array whose difference = given numebr
-            clsMergeArray.findTwoElementsWhoseDiffIsGivenNumber();
-
-            //Find two elements in an array whose sum = given numebr
-            clsMergeArray.findTwoElementsWhoseSumIsGivenNumber();
 
             //LongestSubarrayMaxSum
             clsMergeArray.LongestSubarrayMaxSum();
@@ -50,15 +27,37 @@ namespace InterviewPrep
             int target = 20;
             clsSumOfNumberToGivenSum.sum_up(numbers, target);
 
+            //Insertion Sorting Algorithms
+            clsSortAlgorithm.InsertionSort();
+
+            clsMergeSort.outputMergeSort();
+
+
+            //Selection Sorting Algorithms
+            clsSortAlgorithm.SelectionSort();
+
+            //Merge two Arrays
+            clsMergeArray.outputMergeArray();
+
+            //S.O.L.I.D
+            SingleResponsibility.Method();
+
+            //Select Sort Algorithm
+            clsSelectSortAlgorithm.AlgSort();
+
+            
+            //Find two elements in an array whose difference = given numebr
+            clsMergeArray.findTwoElementsWhoseDiffIsGivenNumber();
+
+            //Find two elements in an array whose sum = given numebr
+            clsMergeArray.findTwoElementsWhoseSumIsGivenNumber();
+
+
             //Word Count
             clsWordCount.WordCount();
 
             //Bubble Sorting Algorithms
             clsSortAlgorithm.BubbleSort();
-
-
-            //Insertion Sorting Algorithms
-            clsSortAlgorithm.InsertionSort();
 
             //Fibonacci Series
             clsCustomMethods.FibonacciSeries();
@@ -103,6 +102,12 @@ namespace InterviewPrep
 
             //Double Linked List
             clsDoubleLinkedList.DoublyLinkedListImpl<Int32>.Output();
+
+            //Convert a Binary Tree to Double Linked list
+            DLL d = new DLL();
+            Tree t = new Tree();
+            d.FromTree(t);
+            d.Display();
 
             //Switch Pair of strings
             clsSwitchPairofStrings.switchWordsInString();

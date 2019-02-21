@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="clsMergeArray.cs" />
+    <Compile Include="clsMergeSort.cs" />
     <Compile Include="DesignPatterns\clsSingleTon.cs" />
     <Compile Include="clsSumOfNumberToGivenSum.cs" />
     <Compile Include="clsBinaryOperators.cs" />
