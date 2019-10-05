@@ -45,10 +45,10 @@ namespace InterviewPrep
 
         public static void outputMergeArray()
         {
-            int[] arr1 = { 1, 3, 8,5, 7 };
+            int[] arr1 = { 1, 3, 8, 5, 7 };
             int n1 = arr1.Length;
 
-            int[] arr2 = { 2, 4,9, 6, 0 };
+            int[] arr2 = { 2, 4, 9, 6, 0 };
             int n2 = arr2.Length;
 
             int[] arr3 = new int[n1 + n2];
@@ -99,8 +99,7 @@ namespace InterviewPrep
 
             // Consider all possible pairs  
             // and check their sums  
-            for (int i = 0;
-                     i < arr.Length; i++)
+            for (int i = 0; i < arr.Length; i++)
                 for (int j = i + 1; j < arr.Length; j++)
                     if ((arr[i] + arr[j]) == sum)
                     {
@@ -141,9 +140,7 @@ namespace InterviewPrep
         {
             // unordered_map 'um' implemented  
             // as hash table  
-            Dictionary<int,
-                    int> um = new Dictionary<int,
-                                            int>();
+            Dictionary<int, int> um = new Dictionary<int, int>();
             int sum = 0, maxLen = 0;
 
             // traverse the given array  
@@ -160,10 +157,10 @@ namespace InterviewPrep
 
                 // make an entry for 'sum' if  
                 // it is not present in 'um'  
-                if (um.ContainsKey(sum))
+                if (!um.ContainsKey(sum))
                     um.Add(sum, i);
 
-                // check if 'sum-k' is present  
+                //check if 'sum-k' is present
                 // in 'um' or not  
                 if (um.ContainsKey(sum - k))
                 {
