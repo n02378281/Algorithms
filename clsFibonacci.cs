@@ -8,7 +8,7 @@ namespace InterviewPrep
 {
     class clsFibonacci
     {
-        public void FibonacciSeries()
+        public virtual void FibonacciSeries()
         {
             int Prev = 1;
             int Next = -1;

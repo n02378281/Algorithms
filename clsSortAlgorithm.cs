@@ -17,21 +17,21 @@ namespace InterviewPrep
 
             int temp = 0;
 
-            for (int write = 0; write < arr.Length; write++)
+            for (int i = 0; i< arr.Length; i++)
             {
-                for (int sort = 0; sort < arr.Length - 1; sort++)
+                for (int j = 0; j < arr.Length - 1; j++)
                 {
-                    if (arr[sort] > arr[sort + 1])
+                    if (arr[j] > arr[j + 1])
                     {
-                        temp = arr[sort + 1];
-                        arr[sort + 1] = arr[sort];
-                        arr[sort] = temp;
+                        temp = arr[j + 1];
+                        arr[j+ 1] = arr[j];
+                        arr[j] = temp;
                     }
                 }
             }
 
-            for (int i = 0; i < arr.Length; i++)
-                Console.Write(arr[i] + " ");
+            for (int k = 0; k < arr.Length; k++)
+                Console.Write(arr[k] + " ");
 
             Console.ReadKey();
         }

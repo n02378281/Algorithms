@@ -51,5 +51,74 @@ namespace InterviewPrep
             }
             Console.WriteLine(strrev);
         }
+
+        public static void reverseWithSpecialCharacters(char[] str)
+        {
+            // Initialize left and right pointers  
+            int r = str.Length - 1, l = 0;
+
+            // Traverse string from both ends until  
+            // 'l' and 'r'  
+            while (l < r)
+            {
+                // Ignore special characters  
+                if (!char.IsLetter(str[l]))
+                    l++;
+                else if (!char.IsLetter(str[r]))
+                    r--;
+
+                // Both str[l] and str[r] are not spacial  
+                else
+                {
+                    char tmp = str[l];
+                    str[l] = str[r];
+                    str[r] = tmp;
+                    l++;
+                    r--;
+                }
+            }
+        }
+
+        public static void printOutputForReverseWithSpecialCharacters()
+        {
+            String str = "a!!!b.c.d,e'f,ghi";
+            char[] charArray = str.ToCharArray();
+
+            Console.WriteLine("Input string: " + str);
+            reverseWithSpecialCharacters(charArray);
+            String revStr = new String(charArray);
+
+            Console.WriteLine("Output string: " + revStr);
+        }
+
+        public static int[] PlusOne()
+        {
+            int[] digits = new int[] { 1, 2, 3 };
+            for (int i = digits.Length - 1; i >= 0; i--)
+            {
+                if (digits[i] != 9)
+                {
+                    digits[i] += 1;
+                    return digits;
+                }
+                digits[i] = 0;
+            }
+            int[] newDigits = new int[digits.Length + 1];
+            newDigits[0] = 1;
+            return newDigits;
+        }
+
+        public static int ReverseAnInteger(int number)
+        {
+            int rem = 0;
+            int rev = 0;
+            while (number != 0)
+            {
+                rem = number % 10;
+                rev = rev * 10 + rem;
+                number = number / 10;
+            }
+            return rev;
+        }
     }
 }

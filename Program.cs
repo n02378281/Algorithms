@@ -11,7 +11,28 @@ namespace InterviewPrep
     class Program
     {
         static void Main(string[] args)
-        {
+        {   //Find Triplet 
+            int[] Arr = { -1, 0, 1, 2, -1, -4 };
+            clsCustomMethods.ThreeSum(Arr);
+            int num = clsReverseString.ReverseAnInteger(-123);
+            var value = TwoSum(new int[] { 2, 7, 11, 15 }, 9);
+
+            clsReverseString.printOutputForReverseWithSpecialCharacters();
+
+            //Find two elements in an array whose difference = given numebr
+            clsMergeArray.findTwoElementsWhoseDiffIsGivenNumber();
+
+            //Find two elements in an array whose sum = given numebr
+            clsMergeArray.findTwoElementsWhoseSumIsGivenNumber();
+
+            //Get max number of elements whose sum is equal to 20.
+            List<int> numbers = new List<int>() { 1, 5, 5, 8, 9, 12, 19, 20, 4, 5, 7, 8, 6, 8, 7, 4, 1, 5, 9, 7, 1, 2 };
+            int target = 20;
+            clsSumOfNumberToGivenSum.sum_up(numbers, target);
+
+            //LongestSubarrayMaxSum
+            clsMergeArray.LongestSubarrayMaxSum();
+
             //Quick Sort Algorithm
             int[] arr = { 10, 7, 8, 9, 1, 5 };
             int n = arr.Length;
@@ -19,38 +40,22 @@ namespace InterviewPrep
             Console.WriteLine("sorted array ");
             clsSortAlgorithm.printArray(arr, n);
 
-            //LongestSubarrayMaxSum
-            clsMergeArray.LongestSubarrayMaxSum();
-
-            //Get max number of elements whose sum is equal to 20.
-            List<int> numbers = new List<int>() { 1, 5, 5, 8, 9, 12, 19, 20, 4, 5, 7, 8, 6, 8, 7, 4, 1, 5, 9, 7, 1, 2 };
-            int target = 20;
-            clsSumOfNumberToGivenSum.sum_up(numbers, target);
+            //Merge two Arrays
+            clsMergeArray.outputMergeArray();
 
             //Insertion Sorting Algorithms
             clsSortAlgorithm.InsertionSort();
 
             clsMergeSort.outputMergeSort();
 
-
             //Selection Sorting Algorithms
             clsSortAlgorithm.SelectionSort();
-
-            //Merge two Arrays
-            clsMergeArray.outputMergeArray();
 
             //S.O.L.I.D
             SingleResponsibility.Method();
 
             //Select Sort Algorithm
             clsSelectSortAlgorithm.AlgSort();
-
-            
-            //Find two elements in an array whose difference = given numebr
-            clsMergeArray.findTwoElementsWhoseDiffIsGivenNumber();
-
-            //Find two elements in an array whose sum = given numebr
-            clsMergeArray.findTwoElementsWhoseSumIsGivenNumber();
 
 
             //Word Count
@@ -137,6 +142,23 @@ namespace InterviewPrep
 
 
             Console.ReadLine();
+        }
+        public static int[] TwoSum(int[] nums, int target)
+        {
+            nums = new int[] { 2, 7, 11, 15 };
+            target = 9;
+            Dictionary<int, int> dictNum = new Dictionary<int, int>();
+            for (int i = 0; i < nums.Length; i++)
+            {
+                int num = nums[i];
+
+                if (dictNum.TryGetValue(target - num, out int index))
+                {
+                    return new int[] { index, i };
+                }
+                dictNum[num] = i;
+            }
+            return null;
         }
     }
 }
