@@ -11,7 +11,19 @@ namespace InterviewPrep
     class Program
     {
         static void Main(string[] args)
-        {   //Find Triplet 
+        {
+            //Perfect Number
+            bool val= clsPerfectNumber.PerfectNumber(14);
+            //Tic Tac toe Number
+            clsTicTacToe tictac = new clsTicTacToe(3);
+            tictac.Move(0, 0, 1);
+            tictac.Move(0,2,2);
+            tictac.Move(2,2,1);
+            tictac.Move(1,1,2);
+            tictac.Move(2,0,1);
+            tictac.Move(1,0,2);
+            tictac.Move(2,1,1);
+            //Find Triplet 
             int[] Arr = { -1, 0, 1, 2, -1, -4 };
             clsCustomMethods.ThreeSum(Arr);
             int num = clsReverseString.ReverseAnInteger(-123);

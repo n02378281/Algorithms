@@ -60,9 +60,9 @@ namespace InterviewPrep.DesignPatterns.SOLID_Principles
 
     public class Demo
     {
-        static public int Area(Rectangle r) => r.Width * r.Height;
+         public int Area(Rectangle r) => r.Width * r.Height;
 
-        static void Main(string[] args)
+       public  void LiskovPrinciple()
         {
             Rectangle rc = new Rectangle(2, 3);
             Console.WriteLine($"{rc} has area {Area(rc)}");
