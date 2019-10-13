@@ -12,6 +12,23 @@ namespace InterviewPrep
     {
         static void Main(string[] args)
         {
+            //Find duplicates in an Array
+            clsFindDuplicateInAnArray.FindDuplicate();
+            //Prime NUmbers [1-N]
+            clsPrimeNumbersInAGivenRange.FindPrimeNumber();
+            //Replace Dups with 0s
+            clsReplaceDupsWithZeros.ReplaceDupsWithZeros();
+
+
+            //Double Linked List
+            clsDoubleLinkedList.DoublyLinkedListImpl<Int32>.Output();
+
+            //Convert a Binary Tree to Double Linked list
+            DLL d = new DLL();
+            Tree t = new Tree();
+            d.FromTree(t);
+            d.Display();
+
             //Perfect Number
             bool val= clsPerfectNumber.PerfectNumber(14);
             //Tic Tac toe Number
@@ -104,27 +121,13 @@ namespace InterviewPrep
             //Binary Search Tree
             clsBinarySearchTree.PrintOutput();
 
-            //Replace Dups with 0s
-            clsReplaceDupsWithZeros.ReplaceDupsWithZeros();
-
-            //Prime NUmbers [1-N]
-            clsPrimeNumbersInAGivenRange.FindPrimeNumber();
-
-            //Find duplicates in an Array
-            clsFindDuplicateInAnArray.FindDuplicate();
+         
 
             //Remove Duplicates in a String
             String s = clsRemoveDuplicatesInAString.removeDup("scbshbjab");
             Console.WriteLine(s);
 
-            //Double Linked List
-            clsDoubleLinkedList.DoublyLinkedListImpl<Int32>.Output();
-
-            //Convert a Binary Tree to Double Linked list
-            DLL d = new DLL();
-            Tree t = new Tree();
-            d.FromTree(t);
-            d.Display();
+           
 
             //Switch Pair of strings
             clsSwitchPairofStrings.switchWordsInString();
@@ -133,7 +136,7 @@ namespace InterviewPrep
             clsSplit.Split(' ', "Bharath Chandra Vanathadupula");
 
             //Trapping Rain Water
-            clsTrappingRain.Trap(new int[12] { 0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1 });
+           int waterTrapped= clsTrappingRain.Trap(new int[12] { 0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1 });
 
             //Polindrome
             clsPolindrome.PrintOutPut();

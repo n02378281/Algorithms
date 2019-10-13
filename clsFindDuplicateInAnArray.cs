@@ -10,27 +10,41 @@ namespace InterviewPrep
     {
         public static void FindDuplicate()
         {
-            int start = 1;
-            int end = 10;
             int[] arr = { 1, 2, 3, 4, 4, 5, 6, 7, 8, 9, 10 };
-            Console.WriteLine(findDuplicate(arr, start, end));
+            findDuplicate(arr, arr.Length);
         }
 
-        static int findDuplicate(int[] arr, int start, int end)
+        static void findDuplicate(int[] arr, int n)
         {
-            int sumAll = 0;
-            for (int i = start; i <= end; i++)
+            Dictionary<int,
+                   int> map = new Dictionary<int,
+                                             int>();
+            int count = 0;
+            bool dup = false;
+            for (int i = 0; i < n; i++)
             {
-                sumAll += i;
+                if (map.ContainsKey(arr[i]))
+                {
+                    count = map[arr[i]];
+                    map[arr[i]]++;
+                }
+                else
+                    map.Add(arr[i], 1);
             }
-            Console.WriteLine(sumAll);
-            int sumArrElem = 0;
-            ////for (int e; arr)
-            ////{
-            ////    sumArrElem += e;
-            ////}
-            Console.WriteLine(sumArrElem);
-            return sumArrElem - sumAll;
+
+            foreach (KeyValuePair<int,
+                                  int> entry in map)
+            {
+                // if frequency is more than 1  
+                // print the element 
+                if (entry.Value > 1)
+                    Console.Write(entry.Key + " ");
+                dup = true;
+            }
+
+            // no duplicates present 
+            if (!dup)
+                Console.WriteLine("-1");
         }
     }
 }
