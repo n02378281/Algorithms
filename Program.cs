@@ -11,7 +11,36 @@ namespace InterviewPrep
     class Program
     {
         static void Main(string[] args)
-        {   //Find Triplet 
+        {
+            //Find duplicates in an Array
+            clsFindDuplicateInAnArray.FindDuplicate();
+            //Prime NUmbers [1-N]
+            clsPrimeNumbersInAGivenRange.FindPrimeNumber();
+            //Replace Dups with 0s
+            clsReplaceDupsWithZeros.ReplaceDupsWithZeros();
+
+
+            //Double Linked List
+            clsDoubleLinkedList.DoublyLinkedListImpl<Int32>.Output();
+
+            //Convert a Binary Tree to Double Linked list
+            DLL d = new DLL();
+            Tree t = new Tree();
+            d.FromTree(t);
+            d.Display();
+
+            //Perfect Number
+            bool val= clsPerfectNumber.PerfectNumber(14);
+            //Tic Tac toe Number
+            clsTicTacToe tictac = new clsTicTacToe(3);
+            tictac.Move(0, 0, 1);
+            tictac.Move(0,2,2);
+            tictac.Move(2,2,1);
+            tictac.Move(1,1,2);
+            tictac.Move(2,0,1);
+            tictac.Move(1,0,2);
+            tictac.Move(2,1,1);
+            //Find Triplet 
             int[] Arr = { -1, 0, 1, 2, -1, -4 };
             clsCustomMethods.ThreeSum(Arr);
             int num = clsReverseString.ReverseAnInteger(-123);
@@ -92,27 +121,13 @@ namespace InterviewPrep
             //Binary Search Tree
             clsBinarySearchTree.PrintOutput();
 
-            //Replace Dups with 0s
-            clsReplaceDupsWithZeros.ReplaceDupsWithZeros();
-
-            //Prime NUmbers [1-N]
-            clsPrimeNumbersInAGivenRange.FindPrimeNumber();
-
-            //Find duplicates in an Array
-            clsFindDuplicateInAnArray.FindDuplicate();
+         
 
             //Remove Duplicates in a String
             String s = clsRemoveDuplicatesInAString.removeDup("scbshbjab");
             Console.WriteLine(s);
 
-            //Double Linked List
-            clsDoubleLinkedList.DoublyLinkedListImpl<Int32>.Output();
-
-            //Convert a Binary Tree to Double Linked list
-            DLL d = new DLL();
-            Tree t = new Tree();
-            d.FromTree(t);
-            d.Display();
+           
 
             //Switch Pair of strings
             clsSwitchPairofStrings.switchWordsInString();
@@ -121,7 +136,7 @@ namespace InterviewPrep
             clsSplit.Split(' ', "Bharath Chandra Vanathadupula");
 
             //Trapping Rain Water
-            clsTrappingRain.Trap(new int[12] { 0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1 });
+           int waterTrapped= clsTrappingRain.Trap(new int[12] { 0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1 });
 
             //Polindrome
             clsPolindrome.PrintOutPut();

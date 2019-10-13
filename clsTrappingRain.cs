@@ -8,29 +8,40 @@ namespace InterviewPrep
 {
     class clsTrappingRain
     {
-        public static void Trap(int[] height)
+        public static int Trap(int[] height)
         {
-            int l = height.Length;
-            if (l < 3)
-                Console.WriteLine(0);
-            int[] leftMax = new int[l];
-            int[] rightMax = new int[l];
-            int maxL = height[0];
-            int maxR = height[l - 1];
-            for (int i = 0; i < l; i++)
+            // left[i] contains height of tallest bar to the 
+            // left of i'th bar including itself 
+            int n = height.Length;
+            int[] left = new int[n];
+
+            // Right [i] contains height of tallest bar to 
+            // the right of ith bar including itself 
+            int[] right = new int[n];
+
+            // Initialize result 
+            int water = 0;
+
+            // Fill left array 
+            if (height.Length > 0)
             {
-                maxL = height[i] > maxL ? height[i] : maxL;
-                leftMax[i] = maxL;
-                maxR = height[l - 1 - i] > maxR ? height[l - 1 - i] : maxR;
-                rightMax[l - 1 - i] = maxR;
+                left[0] = height[0];
+                for (int i = 1; i < n; i++)
+                    left[i] = Math.Max(left[i - 1], height[i]);
+
+                // Fill right array 
+                right[n - 1] = height[n - 1];
+                for (int i = n - 2; i >= 0; i--)
+                    right[i] = Math.Max(right[i + 1], height[i]);
+
+                // Calculate the accumulated water element by element 
+                // consider the amount of water on i'th bar, the 
+                // amount of water accumulated on this particular 
+                // bar will be equal to min(left[i], right[i]) - arr[i] . 
+                for (int i = 0; i < n; i++)
+                    water += Math.Min(left[i], right[i]) - height[i];
             }
-            int waterTrapped = 0;
-            for (int i = 0; i < l; i++)
-            {
-                waterTrapped += leftMax[i] > rightMax[i] ? rightMax[i] - height[i] : leftMax[i] - height[i];
-            }
-            Console.WriteLine(waterTrapped);
-            Console.ReadLine();
+            return water;
         }
     }
 }
