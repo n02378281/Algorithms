@@ -86,6 +86,7 @@
     <Compile Include="Prep\clsTrappingRainWater2D.cs" />
     <Compile Include="Prep\GetIntersectionNode.cs" />
     <Compile Include="Prep\MergeTwoLists.cs" />
+    <Compile Include="Prep\MinStack.cs" />
     <Compile Include="Prep\NumberToEnglishWords.cs" />
     <Compile Include="Prep\RomanToInt.cs" />
     <Compile Include="Prep\SetMatrixZeros.cs" />
