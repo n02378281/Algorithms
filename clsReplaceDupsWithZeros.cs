@@ -38,7 +38,7 @@ namespace InterviewPrep
             // Just Duplicate records replce by zero.
             for (int k = 1; k <= numDups; k++)
             {
-                array[array.Length - k] = '\0';
+                array[array.Length - k] = '0';
             }
 
             foreach (var item in array)
