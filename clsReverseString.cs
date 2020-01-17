@@ -8,6 +8,18 @@ namespace InterviewPrep
 {
     class clsReverseString
     {
+        public static char[] ReverseString(char[] s)
+        {
+
+            string temp = "";
+            for (int i = s.Length - 1; i >= 0; i--)
+            {
+                temp = temp + s[i];
+            }
+
+
+            return temp.ToCharArray();
+        }
         //Without using In-Built
         public static void ReverseWords()
         {
@@ -119,6 +131,41 @@ namespace InterviewPrep
                 number = number / 10;
             }
             return rev;
+        }
+
+        public static string ReverseWords(string s)
+        {
+            int len = s.Length - 1;
+            List<string> list = new List<string>();
+            string temp = "";
+            for (int i = 0; i < s.Length; i++)
+            {
+                if (s[i] != ' ')
+                    temp += s[i];
+                if ((s[i] == ' ' && s[i - 1] != ' ') || (i == s.Length - 1))
+                {
+                    list.Add(temp);
+                    temp = "";
+                }
+            }
+
+            int left = 0; int right = list.Count - 1;
+
+            while (left < right)
+            {
+                string temp1 = list[left];
+                list[left] = list[right];
+                list[right] = temp1;
+                left++;
+                right--;
+            }
+            string result = "";
+
+            foreach (string item in list)
+            {
+                result +=  item + ' ';
+            }
+            return result.TrimEnd();
         }
     }
 }

@@ -44,8 +44,13 @@
   <ItemGroup>
     <Compile Include="clsMergeArray.cs" />
     <Compile Include="clsMergeSort.cs" />
+    <Compile Include="clsMergeTwoListNodes.cs" />
     <Compile Include="clsPerfectNumber.cs" />
+    <Compile Include="clsRegPattern.cs" />
     <Compile Include="clsTicTacToe.cs" />
+    <Compile Include="clsZigzagConversion.cs" />
+    <Compile Include="DataStructures\clsLinkedList.cs" />
+    <Compile Include="DataStructures\Node.cs" />
     <Compile Include="DesignPatterns\clsSingleTon.cs" />
     <Compile Include="clsSumOfNumberToGivenSum.cs" />
     <Compile Include="clsBinaryOperators.cs" />
@@ -75,8 +80,12 @@
     <Compile Include="DesignPatterns\SOLID Principles\LiskovSubstitution.cs" />
     <Compile Include="DesignPatterns\SOLID Principles\OpenClosedPrinciple.cs" />
     <Compile Include="DesignPatterns\SOLID Principles\SingleResponsibility.cs" />
+    <Compile Include="Prep\GetIntersectionNode.cs" />
+    <Compile Include="Prep\MergeTwoLists.cs" />
+    <Compile Include="Prep\TwoStacks.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StringToIntAscii.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

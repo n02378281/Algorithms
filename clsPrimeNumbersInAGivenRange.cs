@@ -10,12 +10,11 @@ namespace InterviewPrep
     {
         public static void PrimeNumbers()
         {
-            int i, j;
             Console.WriteLine("prime no between 1 to 100");
-            for (i = 2; i <= 100; i++)
+            for (int i = 2; i <= 100; i++)
             {
                 int count = 0;
-                for (j = 1; j <= i; j++)
+                for (int j = 1; j <= i; j++)
                 {
 
                     if (i % j == 0)
