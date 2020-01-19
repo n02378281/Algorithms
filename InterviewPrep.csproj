@@ -86,6 +86,7 @@
     <Compile Include="Prep\clsTrappingRainWater2D.cs" />
     <Compile Include="Prep\clsTrappingRainWater3D.cs" />
     <Compile Include="Prep\ExcelSheetNumber.cs" />
+    <Compile Include="Prep\FindDuplicatesInAnArray.cs" />
     <Compile Include="Prep\GetIntersectionNode.cs" />
     <Compile Include="Prep\IsPalindrome.cs" />
     <Compile Include="Prep\LongestPalindromicSubString.cs" />
@@ -93,10 +94,18 @@
     <Compile Include="Prep\MergeTwoLists.cs" />
     <Compile Include="Prep\MinStack.cs" />
     <Compile Include="Prep\NumberToEnglishWords.cs" />
+    <Compile Include="Prep\RegPattern.cs" />
+    <Compile Include="Prep\RemoveDuplicatesInAnArray.cs" />
+    <Compile Include="Prep\RemoveDuplicatesInaString.cs" />
+    <Compile Include="Prep\RemoveElement.cs" />
+    <Compile Include="Prep\ReverseLinkedList.cs" />
     <Compile Include="Prep\RomanToInt.cs" />
     <Compile Include="Prep\SetMatrixZeros.cs" />
     <Compile Include="Prep\SingleNumber.cs" />
     <Compile Include="Prep\SpiralMatrix.cs" />
+    <Compile Include="Prep\StackUsingQueues.cs" />
+    <Compile Include="Prep\StringToIntAscii.cs" />
+    <Compile Include="Prep\SubDomainsVisitsCount.cs" />
     <Compile Include="Prep\TwoStacks.cs" />
     <Compile Include="Prep\TwoSum.cs" />
     <Compile Include="Prep\ValidParanthesis.cs" />
