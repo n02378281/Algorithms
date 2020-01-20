@@ -9,11 +9,29 @@ using static InterviewPrep.clsBinarytoDoubleLinkedList;
 namespace InterviewPrep
 {
     class Program
-    {              
+    {
 
         static void Main(string[] args)
         {
-            Prep.TwoStacks ts = new Prep.TwoStacks(5);
+            var dllFlatten = new Prep.DLLFlattenMultiLevel();
+            dllFlatten.FlattenDLL();
+            var ll = new Prep.LinkedListAddTwoNumbersII();
+            ll.PassLinkedList();
+            Prep.TreeNode tNode = new Prep.TreeNode(7);
+            tNode.left = new Prep.TreeNode(5);
+            tNode.left.right = new Prep.TreeNode(6);
+            tNode.left.left = new Prep.TreeNode(4);
+            tNode.right = new Prep.TreeNode(9);
+            tNode.right.right = new Prep.TreeNode(10);
+            tNode.right.left = new Prep.TreeNode(11);
+
+            var isValidBST = new Prep.BSTValidation();
+            bool isValid = isValidBST.isValidBST(tNode);
+
+            //S.O.L.I.D
+            SingleResponsibility.Method();
+            return;
+            Prep.StackTwoStacks ts = new Prep.StackTwoStacks(5);
             ts.push1(5);
             ts.push2(10);
             ts.push2(15);
@@ -123,8 +141,6 @@ namespace InterviewPrep
             //Selection Sorting Algorithms
             clsSortAlgorithm.SelectionSort();
 
-            //S.O.L.I.D
-            SingleResponsibility.Method();
 
             //Select Sort Algorithm
             clsSelectSortAlgorithm.AlgSort();
@@ -277,9 +293,9 @@ namespace InterviewPrep
     //linked List class definition
     public class ListNode
     {
-       public int val;
-       public ListNode next;
-       public ListNode(int x) { val = x; }
+        public int val;
+        public ListNode next;
+        public ListNode(int x) { val = x; }
     }
 
 
@@ -312,7 +328,7 @@ namespace InterviewPrep
     public class FindJudgeInTown
     {
         int N = 3;
-        int[,] Matrix = {{1, 3},{2, 3},{3, 1}};
+        int[,] Matrix = { { 1, 3 }, { 2, 3 }, { 3, 1 } };
 
         public int FindJudge(int N, int[][] Matrix)
         {
