@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace InterviewPrep.Prep
-{    
+{
     class ArrTrappingRainWater3D
     {
         private struct Cell : IEquatable<Cell>, IComparable<Cell>
@@ -84,7 +84,18 @@ namespace InterviewPrep.Prep
             }
 
             //Todo remove Comments
-            int[,] directions = null;// { ( -1, 0 ), ( 1, 0 ), ( 0, -1 ), ( 0, 1 ) };
+            int size = 4;
+            int[,] direction = { { -1, 0 }, { 1, 0 }, { 0, -1 }, { 0, 1 } };
+            int[][] directions = new int[size][];
+            for (int j = 0; j < size; j++)
+            {
+                int[] sub = new int[2];
+                for (int i = 0; i < 2; i++)
+                {
+                    sub[i] = direction[j, i];
+                }
+                directions[j] = sub;
+            }
             int currentMaxHeight = 0;
             int res = 0;
             while (set.Count > 0)
@@ -96,8 +107,8 @@ namespace InterviewPrep.Prep
 
                 foreach (var dir in directions)
                 {
-                    int nextRowIdx = cell.RowIdx;// + dir.Item1;
-                    int nextColIdx = cell.ColumnIdx;// + dir.Item2;
+                    int nextRowIdx = cell.RowIdx + dir[0];
+                    int nextColIdx = cell.ColumnIdx + dir[1];
 
                     if (nextRowIdx >= 0 && nextRowIdx < rowsCount && nextColIdx >= 0 && nextColIdx < columnsCount && !visited[nextRowIdx, nextColIdx])
                     {
@@ -116,4 +127,6 @@ namespace InterviewPrep.Prep
             return res;
         }
     }
+
+
 }

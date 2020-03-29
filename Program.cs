@@ -13,6 +13,24 @@ namespace InterviewPrep
 
         static void Main(string[] args)
         {
+            Prep.ArrPartitionLabels.PartitionLabels("ababcbacadefegdehijhklij");
+
+            int[,] trap3D = { { 1, 4, 3, 1, 3, 2 }, { 3, 2, 1, 3, 2, 4 }, { 2, 3, 3, 2, 3, 1 } };
+            int size = 3;
+            int[][] G = new int[size][];
+            for (int j = 0; j < size; j++)
+            {
+                int[] sub = new int[6];
+                for (int i = 0; i < 6; i++)
+                {
+                    sub[i] = trap3D[j, i];
+                }
+                G[j] = sub;
+            }
+
+            var tr3D = new Prep.ArrTrappingRainWater3D();
+            int water = tr3D.TrapRainWater(G);
+
             var dllFlatten = new Prep.DLLFlattenMultiLevel();
             dllFlatten.FlattenDLL();
             var ll = new Prep.LinkedListAddTwoNumbersII();

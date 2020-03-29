@@ -8,20 +8,20 @@ namespace InterviewPrep.Prep
 {
     class ArrLetterCombinationsofaPhoneNumber
     {
-        public List<String> letterCombinations(String digits)
+        public Queue<String> letterCombinations(String digits)
         {
-            LinkedList<String> ans = new LinkedList<String>();
-            if (digits.isEmpty()) return ans;
+            Queue<String> ans = new Queue<String>();
+            if (String.IsNullOrEmpty(digits)) return ans;
             String[] mapping = new String[] { "0", "1", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz" };
-            ans.add("");
-            for (int i = 0; i < digits.length(); i++)
+            ans.Enqueue("");
+            for (int i = 0; i < digits.Length; i++)
             {
-                int x = Character.getNumericValue(digits.charAt(i));
-                while (ans.peek().length() == i)
+                int x = (int)char.GetNumericValue(digits[i]);
+                while (ans.Peek().Length == i)
                 {
-                    String t = ans.remove();
-                    for (char s : mapping[x].toCharArray())
-                        ans.add(t + s);
+                    String t = ans.Dequeue();
+                    foreach (char s in mapping[x].ToCharArray())
+                        ans.Enqueue(t + s);
                 }
             }
             return ans;

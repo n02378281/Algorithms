@@ -84,6 +84,7 @@
     <Compile Include="Prep\ArrIsPalindromeNumber.cs" />
     <Compile Include="Prep\ArrLetterCombinationsofaPhoneNumber.cs" />
     <Compile Include="Prep\ArrLongestCommonPrefix.cs" />
+    <Compile Include="Prep\ArrPartitionLabels.cs" />
     <Compile Include="Prep\ArrReverseNumber.cs" />
     <Compile Include="Prep\ArrReverserWordsNotChars.cs" />
     <Compile Include="Prep\ArrRotateImage.cs" />

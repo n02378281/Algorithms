@@ -43,5 +43,20 @@ namespace InterviewPrep.Prep
 
             _head = prev;
         }
+
+        public ListNode ReverseList(ListNode head)
+        {
+            ListNode res = null; ListNode temp = null;
+
+            while (head.next != null)
+            {
+                temp = head;
+                res = temp;
+                res.next = temp;
+                head = head.next;
+            }
+
+            return res;
+        }
     }
 }
