@@ -85,10 +85,14 @@
     <Compile Include="Prep\ArrLetterCombinationsofaPhoneNumber.cs" />
     <Compile Include="Prep\ArrLongestCommonPrefix.cs" />
     <Compile Include="Prep\ArrPartitionLabels.cs" />
+    <Compile Include="Prep\ArrPerfectNumber.cs" />
     <Compile Include="Prep\ArrReverseNumber.cs" />
     <Compile Include="Prep\ArrReverserWordsNotChars.cs" />
     <Compile Include="Prep\ArrRotateImage.cs" />
     <Compile Include="Prep\ArrThreeSum.cs" />
+    <Compile Include="Prep\BSTLowestCommonAncstor.cs" />
+    <Compile Include="Prep\BSTPostOrderTraversal.cs" />
+    <Compile Include="Prep\BSTPreOrderTraversal.cs" />
     <Compile Include="Prep\DLLFlattenMultiLevel.cs" />
     <Compile Include="Prep\LinkedListAddTwoNumbersII.cs" />
     <Compile Include="Prep\BSTInOrderTraversal.cs" />
@@ -112,7 +116,11 @@
     <Compile Include="Prep\LLMergeTwoLists.cs" />
     <Compile Include="Prep\QueueImplement.cs" />
     <Compile Include="Prep\QueueImplementUsingStack.cs" />
+    <Compile Include="Prep\RecentAssessmentQA\CalcuateGroups.cs" />
+    <Compile Include="Prep\RecentAssessmentQA\CountSequenceAmazon.cs" />
+    <Compile Include="Prep\RecentAssessmentQA\GroupMoviesAwards.cs" />
     <Compile Include="Prep\RemoveNthNodeFromEndofList.cs" />
+    <Compile Include="Prep\RottingOranges.cs" />
     <Compile Include="Prep\StackImplement.cs" />
     <Compile Include="Prep\StackImplementUsingQueue.cs" />
     <Compile Include="Prep\StackMin.cs" />
@@ -132,13 +140,21 @@
     <Compile Include="Prep\ArrTwoSum.cs" />
     <Compile Include="Prep\ArrValidParanthesis.cs" />
     <Compile Include="Prep\ArrZigZagConvert.cs" />
+    <Compile Include="Prep\TreasureIsland.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StringToIntAscii.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Prep\50 coding interview questions.pdf" />
+    <None Include="Prep\ApproachesDS.docx" />
+    <None Include="Prep\CleanCodeHandbook_v1.0.1.pdf" />
+    <None Include="Prep\Design Patterns.docx" />
+    <None Include="Prep\Net Interview Must Questions.docx" />
+    <None Include="Prep\VariousTechniquesToSolveDS" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
