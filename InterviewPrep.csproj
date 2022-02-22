@@ -119,6 +119,7 @@
     <Compile Include="Prep\RecentAssessmentQA\CalcuateGroups.cs" />
     <Compile Include="Prep\RecentAssessmentQA\CountSequenceAmazon.cs" />
     <Compile Include="Prep\RecentAssessmentQA\GroupMoviesAwards.cs" />
+    <Compile Include="Prep\RecentAssessmentQA\MinimizeMemory.cs" />
     <Compile Include="Prep\RemoveNthNodeFromEndofList.cs" />
     <Compile Include="Prep\RottingOranges.cs" />
     <Compile Include="Prep\StackImplement.cs" />

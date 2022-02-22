@@ -1,4 +1,5 @@
 ﻿using InterviewPrep.DesignPatterns.SOLID_Principles;
+using InterviewPrep.Prep.RecentAssessmentQA;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,6 +14,8 @@ namespace InterviewPrep
 
         static void Main(string[] args)
         {
+
+           var minHealth = MinimizeMemory.FindMinHealth(new int[] { 1, 2, 6, 7 }, 5);
             Prep.ArrPartitionLabels.PartitionLabels("ababcbacadefegdehijhklij");
 
             int[,] trap3D = { { 1, 4, 3, 1, 3, 2 }, { 3, 2, 1, 3, 2, 4 }, { 2, 3, 3, 2, 3, 1 } };
