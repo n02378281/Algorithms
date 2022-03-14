@@ -149,11 +149,12 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="Prep\50 coding interview questions.pdf" />
-    <None Include="Prep\ApproachesDS.docx" />
-    <None Include="Prep\CleanCodeHandbook_v1.0.1.pdf" />
-    <None Include="Prep\Design Patterns.docx" />
-    <None Include="Prep\Net Interview Must Questions.docx" />
-    <None Include="Prep\VariousTechniquesToSolveDS" />
+    <None Include="Prep\Amazon\LeaderShipPrinciples.xlsx" />
+    <None Include="Prep\Theoretical\ApproachesDS.docx" />
+    <None Include="Prep\Theoretical\CleanCodeHandbook_v1.0.1.pdf" />
+    <None Include="Prep\Theoretical\Design Patterns.docx" />
+    <None Include="Prep\Theoretical\Net Interview Must Questions.docx" />
+    <None Include="Prep\Theoretical\VariousTechniquesToSolveDS" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

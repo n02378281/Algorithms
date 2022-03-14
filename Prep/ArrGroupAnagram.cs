@@ -49,8 +49,7 @@ namespace InterviewPrep.Prep
                 {
                     val *= prime[x[i] - 'a'];
                 }
-
-                List<string> currentValue = null;
+              
 
                 if (res.ContainsKey(val))
                 {

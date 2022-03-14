@@ -16,6 +16,9 @@ namespace InterviewPrep
         {
 
            var minHealth = MinimizeMemory.FindMinHealth(new int[] { 1, 2, 6, 7 }, 5);
+
+           var stockPrice =MinimizeMemory.stockPrices(new int[]{1,3,2,3});
+           
             Prep.ArrPartitionLabels.PartitionLabels("ababcbacadefegdehijhklij");
 
             int[,] trap3D = { { 1, 4, 3, 1, 3, 2 }, { 3, 2, 1, 3, 2, 4 }, { 2, 3, 3, 2, 3, 1 } };
@@ -50,8 +53,8 @@ namespace InterviewPrep
             bool isValid = isValidBST.isValidBST(tNode);
 
             //S.O.L.I.D
-            SingleResponsibility.Method();
-            return;
+            //SingleResponsibility.Method();
+         //   return;
             Prep.StackTwoStacks ts = new Prep.StackTwoStacks(5);
             ts.push1(5);
             ts.push2(10);
