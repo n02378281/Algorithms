@@ -1,4 +1,5 @@
 ﻿using InterviewPrep.DesignPatterns.SOLID_Principles;
+using InterviewPrep.Prep;
 using InterviewPrep.Prep.RecentAssessmentQA;
 using System;
 using System.Collections.Generic;
@@ -14,11 +15,35 @@ namespace InterviewPrep
 
         static void Main(string[] args)
         {
+            List<char[]> request = new List<char[]>();
+            request.Add(new char[4] { 'O', 'O', 'O', 'O' });
+            request.Add(new char[4] { 'D', 'O', 'D', 'O' });
+            request.Add(new char[4] { 'O', 'O', 'O', 'O' });
+            request.Add(new char[4] { 'X', 'D', 'D', 'O' });
+            Console.WriteLine(RottingOranges.minSteps(request.ToArray()));
 
-           var minHealth = MinimizeMemory.FindMinHealth(new int[] { 1, 2, 6, 7 }, 5);
 
-           var stockPrice =MinimizeMemory.stockPrices(new int[]{1,3,2,3});
-           
+
+            List<int[]> request1 = new List<int[]>();
+            request1.Add(new int[] { 2, 1, 1 });
+            request1.Add(new int[] { 1, 1, 0 });
+            request1.Add(new int[] { 0, 1, 1 });
+
+            List<int[]> rooms = new List<int[]>();
+            rooms.Add(new int[] { 2147483647, -1, 0, 2147483647 });
+            rooms.Add(new int[] { 2147483647, 2147483647, 2147483647, -1 });
+            rooms.Add(new int[] { 2147483647, -1, 2147483647, -1 });
+            rooms.Add(new int[] { 0, -1, 2147483647, 2147483647 });
+
+
+            RottingOranges.OrangesRotting(request1.ToArray());
+
+            RottingOranges.WallsAndGates(rooms.ToArray());
+
+            var minHealth = MinimizeMemory.FindMinHealth(new int[] { 1, 2, 6, 7 }, 5);
+
+            var stockPrice = MinimizeMemory.stockPrices(new int[] { 1, 3, 2, 3 });
+
             Prep.ArrPartitionLabels.PartitionLabels("ababcbacadefegdehijhklij");
 
             int[,] trap3D = { { 1, 4, 3, 1, 3, 2 }, { 3, 2, 1, 3, 2, 4 }, { 2, 3, 3, 2, 3, 1 } };
@@ -54,7 +79,7 @@ namespace InterviewPrep
 
             //S.O.L.I.D
             //SingleResponsibility.Method();
-         //   return;
+            //   return;
             Prep.StackTwoStacks ts = new Prep.StackTwoStacks(5);
             ts.push1(5);
             ts.push2(10);

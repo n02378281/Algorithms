@@ -34,6 +34,9 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.ValueTuple.4.5.0\lib\netstandard1.0\System.ValueTuple.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -93,6 +96,7 @@
     <Compile Include="Prep\BSTLowestCommonAncstor.cs" />
     <Compile Include="Prep\BSTPostOrderTraversal.cs" />
     <Compile Include="Prep\BSTPreOrderTraversal.cs" />
+    <Compile Include="Prep\clsMergeIntervals.cs" />
     <Compile Include="Prep\DLLFlattenMultiLevel.cs" />
     <Compile Include="Prep\LinkedListAddTwoNumbersII.cs" />
     <Compile Include="Prep\BSTInOrderTraversal.cs" />
@@ -148,6 +152,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="packages.config" />
     <None Include="Prep\50 coding interview questions.pdf" />
     <None Include="Prep\Amazon\LeaderShipPrinciples.xlsx" />
     <None Include="Prep\Theoretical\ApproachesDS.docx" />
