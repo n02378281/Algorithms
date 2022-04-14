@@ -98,6 +98,7 @@
     <Compile Include="Prep\BSTPreOrderTraversal.cs" />
     <Compile Include="Prep\clsMergeIntervals.cs" />
     <Compile Include="Prep\DLLFlattenMultiLevel.cs" />
+    <Compile Include="Prep\DynamicPrograming\TargetSum.cs" />
     <Compile Include="Prep\LinkedListAddTwoNumbersII.cs" />
     <Compile Include="Prep\BSTInOrderTraversal.cs" />
     <Compile Include="Prep\BSTKthSmallestElement.cs" />

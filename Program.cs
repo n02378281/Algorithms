@@ -1,5 +1,6 @@
 ﻿using InterviewPrep.DesignPatterns.SOLID_Principles;
 using InterviewPrep.Prep;
+using InterviewPrep.Prep.DynamicPrograming;
 using InterviewPrep.Prep.RecentAssessmentQA;
 using System;
 using System.Collections.Generic;
@@ -15,6 +16,7 @@ namespace InterviewPrep
 
         static void Main(string[] args)
         {
+            TargetSum.FindTargetSumWays(new int[] { 1, 1, 1, 1, 1 }, 3);
             List<char[]> request = new List<char[]>();
             request.Add(new char[4] { 'O', 'O', 'O', 'O' });
             request.Add(new char[4] { 'D', 'O', 'D', 'O' });
@@ -112,6 +114,7 @@ namespace InterviewPrep
             tictac.Move(2, 0, 1);
             tictac.Move(1, 0, 2);
             tictac.Move(2, 1, 1);
+
             //Quick Sort Algorithm
             int[] arr = { 10, 7, 8, 9, 1, 5 };
             int n = arr.Length;
