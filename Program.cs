@@ -16,6 +16,7 @@ namespace InterviewPrep
 
         static void Main(string[] args)
         {
+            ReOrderLogFiles.ReorderLogFiles(new string[] { "dig1 8 1 5 1", "let1 art can", "dig2 3 6", "let2 own kit dig", "let3 art zero" });
             TargetSum.FindTargetSumWays(new int[] { 1, 1, 1, 1, 1 }, 3);
             List<char[]> request = new List<char[]>();
             request.Add(new char[4] { 'O', 'O', 'O', 'O' });
