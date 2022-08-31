@@ -16,6 +16,17 @@ namespace InterviewPrep
 
         static void Main(string[] args)
         {
+
+            bool isRegPattern = clsRegPattern.isMatch("ab", ".*");
+
+            List<int[]> request2 = new List<int[]>();
+            request2.Add(new int[2] { 1, 3 });
+            request2.Add(new int[2] { 2, 6 });
+            request2.Add(new int[2] { 15, 18 });
+            request2.Add(new int[2] { 8, 10 });
+
+            var result = clsMergeIntervals.Merge(request2.ToArray());
+
             ReOrderLogFiles.ReorderLogFiles(new string[] { "dig1 8 1 5 1", "let1 art can", "dig2 3 6", "let2 own kit dig", "let3 art zero" });
             TargetSum.FindTargetSumWays(new int[] { 1, 1, 1, 1, 1 }, 3);
             List<char[]> request = new List<char[]>();
@@ -23,6 +34,7 @@ namespace InterviewPrep
             request.Add(new char[4] { 'D', 'O', 'D', 'O' });
             request.Add(new char[4] { 'O', 'O', 'O', 'O' });
             request.Add(new char[4] { 'X', 'D', 'D', 'O' });
+
             Console.WriteLine(RottingOranges.minSteps(request.ToArray()));
 
 
@@ -105,7 +117,6 @@ namespace InterviewPrep
 
             var y = clsReverseString.ReverseWords("the sky is blue");
             var rev = clsReverseString.ReverseString(new char[] { 'h', 'e', 'l', 'l', 'o' });
-            bool isRegPattern = clsRegPattern.isMatch("mississippi", "mis*is*p*.");
             //Tic Tac toe Number
             clsTicTacToe tictac = new clsTicTacToe(3);
             tictac.Move(0, 0, 1);
