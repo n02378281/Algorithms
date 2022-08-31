@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace InterviewPrep.Prep
 {
-    public class clsMergeIntervals
+    public static class clsMergeIntervals
     {
         //List<int[]> request = new List<int[]>();
         //request.Add(new int[2] { 1, 3 });

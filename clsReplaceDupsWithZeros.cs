@@ -11,7 +11,8 @@ namespace InterviewPrep
         public static void ReplaceDupsWithZeros()
         {
             string s = "fggjdlkdjf";
-            char[] array = s.ToCharArray();// new int[] { 4, 8, 4, 1, 1, 4, 8 };
+            char[] array = s.ToCharArray();
+            // new int[] { 4, 8, 4, 1, 1, 4, 8 };
 
             int numDups = 0, prevIndex = 0;
 

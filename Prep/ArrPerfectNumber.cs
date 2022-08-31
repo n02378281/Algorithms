@@ -17,11 +17,11 @@ namespace InterviewPrep
                 {
                     if (i * i != num)
                     {
-                        sum = sum + i + num / i;
+                        sum += i + num / i;
                     }
                     else
                     {
-                        sum = sum + i;
+                        sum +=  i;
                     }
                 }
             }
